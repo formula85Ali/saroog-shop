@@ -1,0 +1,808 @@
+@font-face {
+    font-family:"vazir";
+    src: url(./font/Vazir-Medium.woff2) format("woff2");
+    font-weight: normal;
+}
+@font-face {
+    font-family:"vazir";
+    src: url(./font/Vazir-Bold.woff2) format("woff2");
+    font-weight: bold;
+}
+@font-face {
+    font-family:"vazir";
+    src: url(./font/Vazir-Light.woff2) format("woff2");
+    font-weight: 200;
+}
+/* main style */
+
+* {
+    font-family: vazir;
+    color: #555;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 100%;
+    direction: rtl;
+}
+
+.container {
+    margin: 0px 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+/* header start */
+
+nav.header {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+
+
+
+nav.header div.nav-right {
+    display: flex;
+}
+
+
+nav.header div.nav-right div.logo {
+    display: flex;
+}
+
+nav.header div.nav-right div.logo img{
+    width: 60px;
+}
+
+
+nav.header div.nav-right div.buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav.header div.nav-right div.buttons ul{
+    display: flex;
+}
+
+nav.header div.nav-right div.buttons ul li {
+    margin: 0px 20px;
+    font-size: 1.25em;
+}
+
+nav.header div.nav-right div.buttons-res {
+    display: none;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav.header div.nav-right div.buttons-res ul{
+    display: flex;
+}
+
+nav.header div.nav-right div.buttons-res ul li {
+    margin: 0px 20px;
+}
+nav.header div.nav-right div.buttons-res ul li img{
+    width: 25px;
+}
+
+
+
+
+nav.header div.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+nav.header div.nav-left span {
+    border: 1px solid #555;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 7px #aaa;
+    transition: 0.2s;
+    font-size: 1em;
+}
+
+nav.header div.nav-left span:hover {
+    background-color: #dddddd8e;
+    transition: 0.2s;
+}
+
+/* end header */
+
+/* start intro */
+
+section.intro {
+    background: rgb(52,147,255);
+    background: linear-gradient(90deg, rgba(104,255,204,1) 0%, rgba(52,147,255,1) 100%);
+    font-size: 1em;
+}
+
+section.intro div.box-intro {
+    display: flex;
+    justify-content: space-between;
+} 
+
+section.intro div.right-intro {
+    display: flex;
+    align-items: center;
+}
+section.intro div.right-intro h1 {
+    font-size: 6.5em;
+    color: #fff;
+}
+
+section.intro div.left-intro {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+section.intro div.left-intro img {
+    width: 630px;
+    margin: 20px 0px;
+}
+
+/* End intro */
+
+/* start best-selling shop item */
+
+section.best-selling {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+section.best-selling div.title h2 {
+    font-size: 1.8em;
+    margin: 25px 0px;
+}
+
+section.best-selling div.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* start card */
+
+div.card {
+    background-color: #E7E7E7;
+    box-shadow: 2px 2px 13px #ACACAC;
+    padding: 25px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    font-size: 1.1em;
+    border-radius: 70px;
+    margin-bottom: 50px;
+}
+
+div.card div.img-card {
+    display: flex;
+    width: 100%;
+}
+div.card div.img-card img {
+    width: 100%;
+    border: 1px solid #707070;
+    border-radius: 50px;
+}
+
+
+div.card div.text {
+    margin-top: 20px;
+}
+
+div.card div.text div.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.card div.text div.title h3 {
+    font-size: 1.5em;
+}
+div.card div.text div.title span.price-off {
+    font-size: 1em;
+    color: #A3A3A3;
+    text-decoration: line-through;
+    font-weight: 200;
+}
+
+
+div.card div.text div.annot p {
+    font-size: 1em;
+    color: #A3A3A3;
+    margin: 10px 0px;
+}
+
+
+div.card div.text div.price {
+    display: flex;
+    justify-content: end;
+}
+
+div.card div.text div.price span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+div.card div.button {
+    display: flex;
+    justify-content: center;
+}
+div.card div.button span {
+    background-color: #FF6363;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-size: 1em;
+}
+ /* end card */
+
+ /* End best-selling shop item */
+
+ /* start Ad */
+ 
+ div.box-ads {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+ }
+
+ div.box-ads img {
+    height:400px;
+    border-radius: 60px;
+ }
+
+/* End Ad */
+
+/* start best item */
+
+section.best-item {
+    background-color: #D6EEFF;
+    font-size: 1em;
+}
+
+section.best-item div.box-best-item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+section.best-item div.title h4 {
+    font-size: 1.8em;
+    margin: 25px 0px;
+}
+
+
+
+
+section.best-item div.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+
+section.best-item div.cards div.top-cards {
+    display: flex;
+    justify-content: space-between;
+}
+section.best-item div.cards div.botton-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.best-item div.cards div.card {
+    width: 16%;
+}
+/* end best item */
+
+
+/* start why we */
+
+section.why-we {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+
+section.why-we div.why-we-box {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+
+section.why-we div.img {
+    display: flex;
+    justify-content: center;
+}
+section.why-we div.img img {
+    width: 190px;
+}
+
+
+section.why-we div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.why-we div.text h5{
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+section.why-we div.text p{
+    text-align: center;
+    font-size: 1em;
+    color: #A3A3A3;
+}
+
+/* end why-we */
+
+/* start footer */
+
+footer {
+    background-color: #3D3D3D;
+    font-size: 1em;
+    padding: 25px 0px 0px 0px;
+}
+
+footer div.top-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+footer div.top-footer div.text {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+footer div.top-footer div.text div.link {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer div.top-footer div.text h6 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+footer div.top-footer div.text span {
+    color: #A3A3A3;
+
+}
+footer div.top-footer div.text p{
+    color: #A3A3A3;
+
+}
+
+
+footer div.top-footer div.namad {
+    width: 25%;
+    display: flex;
+    justify-content: end;
+}
+
+footer div.top-footer div.namad img {
+    width: 120px;
+}
+
+footer hr {
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+}
+
+
+
+
+footer div.botton-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+footer div.botton-footer span {
+    color: white;
+    font-size: 0.9em;
+}
+
+footer div.botton-footer div.left {
+    display: flex;
+    gap: 25px;
+}
+
+footer div.botton-footer div.left img {
+    width: 40px;
+}
+
+
+
+
+
+ /* start respansive */
+
+ @media screen and (min-width:2060px) {
+    .container {
+        margin: 0px 450px;
+    }
+ }
+ @media screen and (max-width:1760px) {
+    section.intro div.right-intro h1 {
+        font-size: 4.9em;
+    }
+
+
+    section.best-selling div.title h2 {
+        font-size: 1.4em;
+    }
+
+    
+    div.card {
+        width: 240px;
+        font-size: 1em;
+        border-radius: 50px;    
+        padding: 20px;
+    }
+    div.card div.img-card img {
+        border-radius: 30px; 
+    }
+
+
+    div.box-ads img {
+        height:300px;
+     }
+
+
+     section.best-item div.title h4 {
+        font-size: 1.4em;
+    }
+
+    section.best-item div.cards div.card {
+        width: 18%;
+        border-radius: 65px;
+    }
+    section.best-item div.cards div.card img {
+        border-radius: 50px;
+    }
+ }
+ @media screen and (max-width:1340px) {
+
+    .container {
+        margin: 0px 132px;
+    }
+
+
+    header {
+        font-size: 0.8em;
+    }
+
+
+    section.intro div.right-intro h1 {
+        font-size: 3em;
+    }
+
+    
+    div.card-box-right{
+        width: 50%;
+        display: flex;
+    }
+    div.card-box-left{
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+    section.best-selling div.cards {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+
+    div.ad-left {
+        display: none;
+    }
+    div.ad-right{
+        width: 100%;
+    }
+    div.ad-right img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    section.best-item div.cards div.card {
+        width: 25%;
+        border-radius: 65px;
+        font-size: 0.9em;
+    }
+    section.best-item div.cards div.card img {
+        border-radius: 50px;
+    }
+
+
+    section.why-we {
+        font-size: 0.85em;
+    }
+    section.why-we div.img img {
+        width: 150px;
+    }
+
+
+
+
+    footer div.top-footer div.text {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    footer div.top-footer div.namad { 
+        margin-top: 20px;
+    }
+
+ }
+ @media screen and (max-width:1024px) {
+    section.intro div.right-intro h1 {
+        font-size: 2.4em;
+    }
+
+    section.best-item div.cards div.card {
+        border-radius: 45px;
+        font-size: 0.7em;
+        padding: 15px;
+    }
+    section.best-item div.cards div.card img {
+        border-radius: 30px;
+    }
+    section.best-item div.cards div.card div.text {
+        margin-top: 8px;
+    }
+
+
+    section.why-we {
+        font-size: 0.76em;
+    }
+
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    footer div.top-footer div.namad img {
+        width: 100px;
+    }
+ }
+ @media screen and (max-width:870px) {
+
+     .container {
+         margin: 0px 60px;
+     }
+
+
+     nav.header div.nav-right div.buttons {
+        display: none;
+     }
+     nav.header div.nav-right div.buttons-res {
+        display: flex;
+     }
+
+     section.why-we {
+        font-size: 0.8em;
+    }
+    section.why-we div.img img {
+        width: 115px;
+    }
+ }
+ @media screen and (max-width:720px) {
+
+
+    nav.header div.nav-right div.logo img  {
+        display: none;
+    }
+    nav.header div.nav-right div.buttons-res {
+        margin: 0px;
+    }
+
+     section.intro div.box-intro {
+         justify-content: center;
+     }
+    section.intro div.left-intro {
+        display: none;
+    }
+    section.intro div.right-intro h1{
+        margin: 25px 0px;
+        text-align: center;
+    }
+
+    div.box-ads img {
+        border-radius: 40px;
+    }
+
+ }
+ @media screen and (max-width:700px) {
+    div.card {
+        width: 213px;
+        font-size: 0.9em;
+        border-radius: 38px;
+        padding: 15px;
+    }
+
+    section.best-item div.cards div.card {
+        border-radius: 35px;
+        font-size: 0.6em;
+        padding: 11px;
+    }
+    section.best-item div.cards div.card img {
+        border-radius: 20px;
+    }
+    section.best-item div.cards div.card div.button span {
+        padding: 5px 20px;
+    }
+
+    
+    footer div.botton-footer div.left {
+        display: flex;
+        gap: 12px;
+    }
+    footer div.botton-footer div.left img {
+        width: 25px;
+        
+    }
+ }
+ @media screen and (max-width:630px) {
+    div.card {
+        width: 151px;
+        font-size: 0.7em;
+        padding: 12px;
+    }
+
+    section.best-item .container {
+        margin: 0px 20px;
+    }
+
+    section.why-we div.why-we-box{
+        width: 100%;
+    }
+    section.why-we div.img img {
+        width: 130px;
+    }
+ }
+ @media screen and (max-width:500px) {
+    .container {
+        margin: 0px 30px;
+    }
+ 
+
+    nav.header div.nav-right div.buttons-res ul li img {
+        width: 20px;
+    }
+    nav.header div.nav-right div.buttons-res ul li {
+        margin: 0px 15px;
+    }
+
+    nav.header div.nav-left span {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+
+    div.card {
+        width: 130px;
+        font-size: 0.6em;
+        border-radius: 25px;
+        padding: 10px;
+    }
+    div.card div.img-card img {
+        border-radius: 15px; 
+    }
+    div.card div.button span {
+        padding: 8px 20px;
+    }
+
+
+
+    section.best-item div.cards div.card {
+        border-radius: 23px;
+        font-size: 0.44em;
+        padding: 10px;
+    }
+
+
+    section.why-we {
+        font-size: 0.65em;
+    }
+    section.why-we div.why-we-box{
+        margin: 15px 0px;
+    }
+    section.why-we div.img img {
+        width: 110px;
+    }
+    section.why-we div.text h5 {
+        margin: 10px 0px;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+
+    footer div.top-footer div.namad img {
+        width: 80px;
+    }
+
+    footer div.botton-footer span {
+        font-size: 0.75em;
+    }
+ }
+ @media screen and (max-width:370px) {
+    .container {
+        margin: 0px 20px;
+    }
+ 
+
+    section.intro div.right-intro h1 {
+        margin: 10px 0px;
+        font-size: 1.8em
+    }
+
+
+    section.best-selling div.title h2 {
+        font-size: 1.2em;
+        margin: 15px 0px;
+    }
+
+
+    div.card {
+        width: 110px;
+        font-size: 0.5em;
+        margin-bottom: 25px;
+    }
+
+
+    div.box-ads img {
+        border-radius: 20px;
+    }
+
+
+    section.best-item div.cards div.card {
+        font-size: 0.38em;
+        padding: 7px;
+    }
+
+    section.best-item div.cards div.card div.text div.annot p {
+        margin: 5px 0px;
+    }
+
+    section.best-item div.title h4 {
+        font-size: 1.2em;
+        margin: 15px 0px;
+    }
+ }
+
+ 
